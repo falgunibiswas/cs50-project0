@@ -1,0 +1,21 @@
+@import "../bootstrap/scss/bootstrap";
+
+body { @extend .container; }
+
+body > header {
+    @extend .pb-2;
+    @extend .mt-4;
+    @extend .mb-2;
+    @extend .border-bottom;
+    h1 { @extend .display-4 };
+    p { @extend .lead; }
+  }
+  
+  body > main { @extend .row;
+    nav { @extend .col-lg-3;
+      ul { @extend .list-group;
+        li { @extend .list-group-item; }
+      }
+    }
+    article { @extend .col-lg-9; }
+  }  
